@@ -184,7 +184,7 @@ They are generated from the leftovers in the sawmill.
     after being deformed; the lesser ones are plastic.
 \end{itemize}
 
-\subsection*{Tests}
+\subsection*{Destructive tests}
 
 \subsubsection*{Tensile test}
 
@@ -195,7 +195,119 @@ It uses a stress-strain diagram.
     \item Elongation \\ $\Delta L = L - L_0$ (in mm) \\ $\epsilon =
     \frac{\Delta L}{L_0}$ (non-dimensional).
     \item Strain \\ $\sigma = \frac{F}{S_0}$ (in Pa, N/mm$^2$, kp/cm$^2$) \\
-    $\sigma = E \cdot \epsilon$.
+    $\sigma = E$ (modulus of elasticity) $\cdot \: \epsilon$ (only in the
+    proportional area).
+    \item Max elongation $A\left(\%\right) = 100
+    \left(\frac{L_f - L_0}{L_0}\right)$.
+    \item Area of a cylindre $\pi r^2 = \pi \frac{d}{2}^2$.
+    \item Area under the line...
+    \begin{itemize}
+        \item Under the tensile test $\rightarrow$ Tenacity.
+        \item Under the elastic limit $\rightarrow$ Resillience.
+        \item Under the force-elongation curve $\rightarrow$ Work.
+        \item Ductility \% relative elongation $\rightarrow$ Plastic deformation
+        until fracture.
+        \item Rigidness $\rightarrow$ Plastic deformation until fracture;
+        proportional to \emph{E}.
+    \end{itemize}
+    \item Maximum tensile force $\rightarrow$ Maximum charge limit on a material
+    smaller than the tensile tension on the proportionality limit.
+    \begin{itemize}
+        \item The material doesn't suffer plastic deformation.
+        \item The material abides by Hook's law.
+        \item The process's security is more asured.
+    \end{itemize}
+    \item Coefficient of secutiry $\rightarrow$ $n = \frac{\sigma_f}{\sigma_w}$,
+    where $\sigma_f$ is the creep stress and $\sigma_w$ is the work stress.
+\end{itemize}
+
+\subsubsection*{Hardness test}
+
+\begin{itemize}
+    \item Brinnel
+    \begin{itemize}
+        \item Not too hard materials.
+        \item Tempered steel ball.
+        \item Measures the diameter of the indentation on mid-size materials.
+        \item \emph{HB} $= \frac{F}{S} = \frac{2F}{\pi D\left(D - \sqrt{D^2 d^2}
+        \right) }$ (in $\frac{kp}{mm^2}$).
+        \item Expressed in \emph{HB}, \emph{mm}, \emph{kp}, \emph{s}.
+    \end{itemize}
+    \item Rockwell
+    \begin{itemize}
+        \item Hard and soft materials.
+        \item Diamond cone or steel ball.
+        \item Measures the depth of the indentation and is the quickest.
+        \item Soft materials $\rightarrow$ \emph{HR} $= 100 - e$ \\ Hard
+        materials $\rightarrow$ \emph{HR} $= 130 - e$ \\ where \emph{e} is the
+        permanent indentation.
+    \end{itemize}
+    \item Vickers
+    \begin{itemize}
+        \item Very hard materials.
+        \item Diamond pyramid.
+        \item Measures the diameter of the indentation and is very expensive.
+        \item \emph{HV} $= \frac{1.854 F}{d^2}$ (in $\frac{kp}{mm^2}$).
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{Resillience test}
+
+\begin{itemize}
+    \item Charpy test.
+    \item Test piece $10 \times 10$ mm, $L = 55$ mm with 2 mm U/V serration
+    ($S_0 = 80$ mm$^2$).
+    \item $\rho = \frac{m g \left(h_0 - h_f\right)}{S}$ (in $\frac{J}{m^2}$).
+\end{itemize}
+
+\subsubsection*{Fatigue test}
+
+The material is subjected to cycli loads without reaching the breaking point.
+The most common one is the rotative bending test.
+Steel and other materials have a fatigue limit around 0.4 - 0.5.
+
+\subsection*{Non-destructive tests}
+
+\subsubsection*{Ultrasonic test}
+
+\begin{itemize}
+    \item Uses high-frequency sound waves.
+    \item A transducer applies sound waves into the steel. The sound waves
+    travel through the material and reflect back if there's a discontinuity.
+    \item Detects internal flaws, measures thickness, and finds changes in
+    material properties.
+\end{itemize}
+
+\subsubsection*{Radiographic test}
+
+\begin{itemize}
+    \item Uses X-rays or gamma rays.
+    \item Radiographic films are exposed to a radiation source passed through
+    the steel. The film shows the internal structure based on varying radiation
+    absorption levels.
+    \item Identifies internal defects like cracks, voids, and inclusions.
+\end{itemize}
+
+\subsubsection*{Magnetic particle test}
+
+\begin{itemize}
+    \item Magnetic induction.
+    \item The steel is magnetized. Fine magnetic particles are applied to the
+    surface, which gather at discontinuities, visible under proper lighting
+    conditions.
+    \item Detects surface and slightly subsurface discontinuities in
+    ferromagnetic materials.
+\end{itemize}
+
+\subsubsection*{Eddy Current test}
+
+\begin{itemize}
+    \item Electromagnetic induction.
+    \item Alternating current is passed through a coil, creating an alternating
+    magnetic field that induces eddy currents in the conductive steel.
+    Variations in the eddy current flow are monitored to detect flaws.
+    \item Detects surface and near-surface defects, measures coating
+    thicknesses, and conducts conductivity measurements.
 \end{itemize}
 
 \end{document}
